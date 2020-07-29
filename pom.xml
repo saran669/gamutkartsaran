@@ -21,7 +21,19 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-			
+		<distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://13.232.91.111:8081/repository/maven-snapshots/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://13.232.91.111:8081/repository/maven-releases/</url>
+        </snapshotRepository>
+    </distributionManagement>
+		
 	</dependencies>
 	
 	<build>
